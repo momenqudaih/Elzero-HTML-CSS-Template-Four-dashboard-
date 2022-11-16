@@ -56,6 +56,9 @@
 .pt-20 {
   padding-top: 20px;
 }
+.pb-15 {
+  padding-bottom: 15px;
+}
 .pb-20 {
   padding-bottom: 20px;
 }
@@ -67,6 +70,9 @@
 }
 .m-10 {
   margin: 10px;
+}
+.m-15 {
+  margin: 15px;
 }
 .m-20 {
   margin: 20px;
@@ -95,11 +101,17 @@
 .mr-15 {
   margin-right: 15px;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
 .mb-10 {
   margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -210,12 +222,12 @@
 }
 /* End font */
 /* Start border */
-.border-1 {
-  border: 1px solid #ccc;
-}
-
 .b-none {
   border: none;
+}
+
+.border-ccc {
+  border: 1px solid #ccc;
 }
 .rad-6 {
   border-radius: 6px;
