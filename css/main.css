@@ -1049,6 +1049,107 @@ ul {
 }
 
 /* End Profile */
+/* Start Projects Page */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.projects-page .project .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.projects-page .project .team {
+  min-height: 80px;
+}
+
+.projects-page .project .team a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.projects-page .project .team a:hover {
+  z-index: 2;
+}
+
+.projects-page .project .team a:nth-child(2) {
+  left: 25px;
+}
+.projects-page .project .team a:nth-child(3) {
+  left: 50px;
+}
+.projects-page .project .team a:nth-child(4) {
+  left: 75px;
+}
+.projects-page .project .team a:nth-child(5) {
+  left: 100px;
+}
+
+.projects-page .project .team img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+}
+
+.projects-page .project .techs {
+  border-top: 1px solid #eee;
+  justify-content: flex-end;
+}
+.projects-page .project .techs span {
+  margin-left: 5px;
+  padding: 3px 8px;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .techs {
+    flex-direction: column;
+  }
+  .projects-page .project .techs span {
+    width: fit-content;
+  }
+  .projects-page .project .techs span:not(:last-child) {
+    margin: 0 0 15px 5px;
+  }
+}
+
+.projects-page .project .info {
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .info {
+    flex-direction: column;
+  }
+}
+
+.projects-page .project .info .progress {
+  height: 8px;
+  width: 260px;
+}
+@media (max-width: 767px) {
+  .projects-page .project .info .progress {
+    margin-bottom: 15px;
+  }
+}
+
+.projects-page .project .info .progress span {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* End Projects Page*/
 /* Start animation */
 @keyframes flashing {
   from {
