@@ -1347,6 +1347,57 @@ ul {
 }
 
 /* End Files Page */
+/* Start Plans Page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.plans-page .plan header {
+  border: 3px solid white;
+  outline: 3px solid transparent;
+}
+.plans-page .plan.green header {
+  outline-color: var(--green-color);
+}
+.plans-page .plan.blue header {
+  outline-color: var(--blue-color);
+}
+.plans-page .plan.orange header {
+  outline-color: var(--orange-color);
+}
+
+.plans-page .plan header .price {
+  font-size: 40px;
+  margin: auto;
+}
+
+.plans-page .plan header .price span {
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+.plans-page .plan li {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.plans-page .plan li i:first-child {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.plans-page .plan li i.yes {
+  color: var(--green-color);
+}
+.plans-page .plan li i:not(.yes, .help) {
+  color: var(--red-color);
+}
+.plans-page .plan li i.help {
+  margin-left: auto;
+  color: var(--grey-color);
+  cursor: pointer;
+}
+/* End Plans Page */
 /* Start animation */
 @keyframes flashing {
   from {
@@ -1374,5 +1425,4 @@ ul {
     -o-transform: translateY(-5px);
   }
 }
-
 /* End animation */
